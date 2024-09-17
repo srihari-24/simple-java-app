@@ -1,19 +1,9 @@
 package com.example.simple_java_app;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import org.junit.jupiter.api.Test;
-
-/**
- * Unit test for simple App.
- */
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 public class AppTest {
-
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
-    }
+@Test
+public void testGetGreeting() {
+assertEquals("Hello, CI/CD World!", App.getGreeting());
+}
 }
